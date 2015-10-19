@@ -1,0 +1,667 @@
+/*CLEARFIX*/
+/*clearfix the parent of floated element, so shit doesn't get fucked up!*/
+.clearfix:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+/*PAGE SETUP*/
+/*border is included in element size, to make math easy*/
+*{
+  -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+/*set maximum width of html element*/
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/*set default font to manageable size*/
+html {
+  font-size: 62.5%;
+}
+/*set default body font and size*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+}
+/*set header font*/
+h1,
+h2,
+h3 {
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+
+/*HEADER*/
+/*header width*/
+header {
+  width: 100%;
+}
+/*title width*/
+div.titleHero {
+  /*width: 100%;*/
+  text-align: center;
+  background: url(../image/mainLP-hero.jpg) center no-repeat;
+  background-size: cover;
+  height: 613.333px;
+  padding-top: 20%;
+}
+div.navA {
+  padding: 0;
+  border: 1px solid #f6f6f6;
+  position: relative;
+}
+/*nav b width and center*/
+div.navB {
+  width: 66.66%;
+  margin: 0 auto;
+  padding: 3% 0;
+}
+div.navBLogo {
+  margin-top: 5px;
+}
+/*float navA left */
+nav.navALeft {
+  width: 12.5%;
+  float: left;
+  text-align: center;
+}
+/*remove padding from nav a left*/
+ul.navALeftList {
+  padding: 0;
+}
+/*float navB image left*/
+div.navB img {
+  float: left;
+  margin: 12.5px;
+}
+/*float nav A and B right*/
+nav.navARight {
+  clear: both;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+nav.navBRight {
+  width: 50%;
+  float: right;
+  text-align: right;
+
+}
+ul {
+  list-style: none;
+}
+/*BREADCRUMBS*/
+ul.navCrumbsLeftList {
+  display: inline-block;
+  /*list-style: none;*/
+  text-align: left;
+}
+section.navB {
+  width: 100%;
+  background: #f6f6f6;
+  padding: 30px 0 30px 0;
+}
+div.navBCrumbs {
+  width: 66.66%;
+  margin: 0 auto;
+  position: relative;
+}
+ul.navBCrumbsLeftList {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.navBCrumbsLeftList li {
+  display: inline-block;
+}
+nav.navBCrumbsLeft {
+  width: 50%;
+  float: left;
+}
+div.navBCrumbsRight {
+  width: 50%;
+  float: right;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  padding-top: 3px;
+}
+/*COLLECTION*/
+/*set collection section width and center*/
+section.collection {
+  width: 66.66%;
+  margin: 0 auto;
+}
+/*set collection image sizes, get rid of ghost image*/
+.collection img {
+  width: 100%;
+  display: block;
+}
+/*set chairs, cups, plates titles right*/
+div.collectionChairsTitle, 
+div.collectionCupsTitle, 
+div.collectionPlatesTitle {
+  right: 0;
+}
+/*set lamp and clock titles left*/
+div.collectionLampsTitle, 
+div.collectionClocksTitle {
+  left: 0;
+}
+/*set up collection title defaults*/
+div.collectionChairsTitle,
+div.collectionLampsTitle,  
+div.collectionCupsTitle, 
+div.collectionClocksTitle,
+div.collectionPlatesTitle {
+  text-align: center;
+  color: #fff;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding-top: 5%;
+}
+/*set parent elements as relative*/
+div.collectionChairs, 
+div.collectionLamps, 
+div.collectionCups, 
+div.collectionClocks, 
+div.collectionPlates {
+  position: relative;
+}
+/*set icon sizes and placement*/
+div.collectionChairsTitleImage,
+div.collectionLampsTitleImage,  
+div.collectionCupsTitleImage, 
+div.collectionClocksTitleImage,
+div.collectionPlatesTitleImage {
+  width: 25%;
+  margin: 0 auto;
+  padding-top: 80%;
+}
+/*set collection title colors*/
+div.collectionChairsTitle {
+  background: #C6DA9B;
+}
+div.collectionLampsTitle {
+  background: #F4DC86;
+} 
+div.collectionCupsTitle {
+  background: #A6C7EB;
+}
+div.collectionClocksTitle {
+  background: #ED8B5C;
+}
+div.collectionPlatesTitle {
+  background: #BCE5D3;
+}
+/*set collection div size*/
+div.collectionChairsPhoto, 
+div.collectionLampsPhoto, 
+div.collectionCupsPhoto, 
+div.collectionClocksPhoto, 
+div.collectionPlatesPhoto {
+  width: 80%;
+}
+/*move lamp and clock images to right side*/
+div.collectionLampsPhoto, 
+div.collectionClocksPhoto {
+  position: relative;
+  left: 20%;
+}
+/*float clients img logos left and resize*/
+.collectionClients img {
+  float: left;
+  width: 16%;
+  padding: 0 30px;
+  margin: 25px 0;
+}
+/*FOOTER*/
+/*set footer section width and center*/
+/*clear footer after floating .collectionClients img*/
+footer {
+  width: 100%;
+  text-align: center;
+  clear: both;  
+}
+section.foot {
+  width: 100%;
+}
+/*set foota footb, footc, footd width and center*/
+div.footA {
+  width: 100%;
+  padding: 4%;
+}
+div.footB {
+  width: 66.66%;
+  margin: 0 auto;
+}
+div.footC {
+  width: 100%;
+  padding: 2% 0;
+}
+div.footD {
+  width: 66.66%;
+  margin: 0 auto;
+}
+/*constrain footA to 66.66%*/
+div.footAConstrain {
+  width: 66.66%;
+  margin: 0 auto;
+}
+/*constrain footC to 66.66%*/
+div.footCConstrain, div.footCConstrainNotMain {
+  width: 66.66%;
+  margin: 0 auto;
+}
+/*set the footA buttons to 33.33%*/
+div.footA a {
+  width: 33.33%;
+}
+/*float a buttons left and right*/
+a.footALeft {
+  float: left;
+}
+a.footARight {
+  float: right;
+}
+/*set full bleed background color to footA and C*/
+div.footA, div.footC {
+    background: #F6F6F6;
+}
+.footAConstrain a {
+  background: #fff;
+}
+/*make foot B relative, because of it's position: absolute children*/
+div.footB {
+  position: relative;
+}
+/*set footB navs to 25%*/
+.footB div {
+  width: 25%;
+  float: left;
+}
+.footB div h3{
+  text-align: left;
+  /*padding-left: 19%;*/
+}
+/*remove list style and left justify*/
+.footB li {
+  list-style-type: none;
+  text-align: left;
+}
+/*make Information, Extras, Account the same size as Collections*/
+div.footBInformation, 
+div.footBExtras, 
+div.footBAccount {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+}
+/*move Collections beside Information*/
+div.footBCollections {
+  position: relative;
+  left: 25%;
+}
+/*move Extras nav beside Account*/
+div.footBExtras {
+  right: 25%;
+}
+/*move account nav to far right*/
+div.footBAccount {
+  right: 0;
+}
+.footC a {
+  width: 25%;
+}
+ul.footCConstrainNavList {
+  /*list-style: none;*/
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+ul.footCConstrainNavListNotMain {
+  /*list-style: none;*/
+  text-align: center;
+}
+ul.navALeftList, 
+ul.navARightList, 
+ul.navBRightList {
+  /*list-style: none;*/
+  font-size: 1.1rem;
+  padding: none;
+}
+.navARightList ul{
+  padding: 0;
+}
+.navALeftList li {
+  float: left;
+  width: 33.33%;
+}
+.navARightList li, 
+.navBRightList li{
+  display: inline-block;
+  padding: 0 10px;
+}
+.footCConstrainNavList li {
+  float: left;
+  width: 25%;
+}
+ul.footCConstrainNavListNotMain {
+    margin: 0;
+    padding: 0;
+}
+.footCConstrainNavListNotMain li {
+  display: inline-block;
+  width: 23%;
+}
+/*constrain social media nav to 25%*/
+.footCConstrain nav {
+  width: 25%;
+  float: left;
+}
+.footCConstrainNotMain nav {
+  width: 25%;
+  margin: 0 auto;
+}
+/*constrain the newsletter label to 25%*/
+.footCConstrain label {
+  width: 25%;
+  float: left;
+}
+/*constrain the form to 50*/
+.footCConstrain form {
+  width: 50%;
+  float: left;
+}
+/*make position: absolute arrows' parent relative*/
+form.footCForm {
+  position: relative;
+}
+/*move the arrow inside the input*/
+img.fa-long-arrow-right {
+  position: absolute;
+  top: 10px;
+  right: 3px;
+}
+/*set input width to size of form*/
+input.footCLabel {
+  width: 100%;
+}
+/*GENERAL STYLING*/
+/*set links color to black and without decoration*/
+a {
+  text-decoration: none;
+  color: #000;
+}
+/*remove left padding from the unordered foot b lists*/
+.footB ul {
+  padding: 0;
+}
+
+
+/*page 2*/
+/*size the main section*/
+section.main {
+  width: 66.66%;
+  margin: 0 auto;
+}
+/*size the sidebar*/
+section.mainSidebar {
+  width: 33.33%;
+  float: left;
+}
+/*size the gallery*/
+section.mainGallery {
+  width: 66.66%;
+  float: right;
+}
+/*size and float the left div of the top gallery bar*/
+div.mainGalleryHeadLeft {
+  width: 50%;
+  float: left;
+}
+/*size and float the right div of the top gallery bar*/
+div.mainGalleryHeadRight {
+  width: 25%;
+  float: right;
+}
+/**/
+div.mainGalleryHeadLeftLeft {
+  size: 50%;
+  float: left;
+}
+div.mainGalleryHeadLeftRight {
+  size: 50%;
+  float: right;
+}
+div.mainGalleryHeadRightRight {
+  size: 100%;
+  float: right;
+}
+
+.mainSidebarColor li, 
+.mainSidebarBrands li {
+  display: inline-block;
+}
+.mainSidebar ul, 
+.mainGallery ul {
+  padding: 0;
+  margin: 0; 
+}
+.mainGalleryGallery li {
+  width: 49%;
+  display: inline-block;
+}
+.mainGalleryGallery img {
+  width: 100%;
+}
+div.mainGalleryBottomLeft
+{
+  width: 33.33%;
+  float: left;
+}
+div.mainGalleryBottomCenter {
+  width: 33.33%;
+  float: left;
+}
+div.mainGalleryBottomRight {
+  width: 33.33%;
+  float: right;
+  text-align: right;
+}
+.mainGalleryBottomCenter li {
+  display: inline-block;
+}
+.mainGalleryBottomCenter ul {
+  text-align: center;
+}
+
+/*PAGE 3*/
+/*hero image sizing*/
+section.mainContact, 
+div.mainContactHero, 
+div.mainContactOptions {
+  width: 100%;
+}
+div.mainContactOptionsAddress {
+  width: 33.33%;
+  float: left;
+}
+form.mainContactOptionsForm {
+  width: 66.66%;
+  float: right;
+}
+.mainContactHero img {
+  width: 100%;
+}
+.mainContactOptions ul {
+  margin: 0;
+  padding: 0;
+}
+ul.address li {
+  padding-left: 20px;
+}
+ul.phone li {
+  padding-left: -10px;
+}
+.mainContactOptionsNavList li {
+  display: inline-block;
+}
+.mainContactOptionsForm h3 {
+  margin: 0;
+}
+.mainContactOptionsNavList li {
+  margin: 0 auto;
+}
+.mainContactOptionsNavList li {
+  width: 23%;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  padding-top: 0;
+}
+
+input.contactForm, textarea.contactForm {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+input.button {
+  background: #fff;
+  border: 2px solid black;
+}
+ul.mainContactOptionsFormListTop li {
+  float: left;
+}
+ul.mainContactOptionsFormListTop li:nth-child(1), ul.mainContactOptionsFormListTop li:nth-child(2) {
+  margin-right: 4px;
+}
+ul.mainContactOptionsFormListTop li:nth-child(3), ul.mainContactOptionsFormListTop li:nth-child(2) {
+  margin-left: 4px;
+}
+ul.mainContactOptionsFormList li:nth-child(4) {
+    border-bottom: 2px solid rgba(204, 204, 204, .5);
+    background: #fff;
+    margin-bottom: 5px;
+}
+textarea {
+  resize: none;
+  border: none;
+}
+
+/*header styling*/
+.navARightListLi2 li:nth-child(2) {
+  background: #9a9a9a;
+}
+.navARightListLi3 li:nth-child(2) {
+  border: 1px solid black;
+}
+div.navA a {
+  color: #9A9A9A;
+}
+div.navA i {
+  color: black;
+}
+ul.navBRightList a{
+  color: #9A9A9A;
+}
+ul.navBRightList li:first-child a {
+  color: black;
+}
+.title p {
+  color: #9A9A9A;
+}
+div.collectionChairs,
+div.collectionCups, 
+div.collectionPlates,
+div.collectionLamps,
+div.collectionClocks {
+  margin: 10px 0;
+}
+
+div.collectionChairsTitle,
+div.collectionCupsTitle, 
+div.collectionPlatesTitle {
+  right: -10px;  
+}
+/*div.collectionLampsTitle,
+div.collectionClocksTitle {
+  margin-right: 10px;
+}
+*/
+div.collectionChairsPhoto,
+div.collectionCupsPhoto, 
+div.collectionPlatesPhoto {
+  margin-right: 10px;
+}
+div.collectionLampsPhoto,
+div.collectionClocksPhoto {
+  margin-left: 10px;
+}
+
+.foot ul a {
+  color: #9A9A9A;
+}
+.footD p, .footD a, .footE p, .footE a {
+  color: #9A9A9A;
+}
+div.holder {
+  margin: 5px;
+  text-align: center;
+  color: #9a9a9a;
+}
+div.holder h3{
+  color: black;
+}
+section.mainSidebar a, section.mainSidebar span {
+  color: #9a9a9a;
+}
+.mainGalleryHead, .mainGalleryHead a, .mainGalleryHead i {
+  color: #9a9a9a;
+}
+ul.mainGalleryBottomList li {
+  padding: 0 5px;
+}
+ul.mainGalleryBottomList li a {
+  padding: 5px 10px;
+  color: #9a9a9a;
+}
+ul.mainGalleryBottomList li:nth-child(1) a {
+  color: black;
+  border: 1px solid #9a9a9a;
+}
+h6 {
+  color: #9a9a9a;
+}
+div.mainContactOptionsAddress, div.mainContactOptionsAddress i {
+  background: #f6f6f6;
+  color: #9a9a9a;
+  padding: 65px 0 15px 0;
+}
+.mainContactOptionsAddress li {
+  padding-left: 20px;
+}
+div.mainContactOptionsAddress {
+  width: 33%;
+  margin-right: 1px;
+}
+
+form.mainContactOptionsForm {
+  width: 66.6%;
+  margin-left: 2px;
+}
+ul.mainContactOptionsFormList li {
+  padding: 10px 0;
+}
